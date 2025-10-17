@@ -1,0 +1,7 @@
+{
+  "name": "Kazumi HPP & Sales Calculator",
+  "description": "A modern web application to calculate Cost of Goods Sold (HPP), manage sales, inventory, and generate comprehensive reports for a clothing business. Built with React and Tailwind CSS for a seamless user experience.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
