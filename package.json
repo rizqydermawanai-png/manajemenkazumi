@@ -1,0 +1,28 @@
+{
+  "name": "rd-kazumi-manajemen",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aplikasi web modern untuk menghitung HPP, mengelola penjualan, inventaris, dan membuat laporan komprehensif untuk bisnis pakaian Anda.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "framer-motion": "^11.3.19",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.2",
+    "lucide-react": "^0.417.0",
+    "mysql2": "^3.15.3",
+    "node-fetch": "^3.3.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "vite": "^7.1.12"
+  }
+}
