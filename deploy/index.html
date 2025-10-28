@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kazumi Dashboard</title>
+    <meta name="description" content="Aplikasi web modern untuk menghitung HPP, mengelola penjualan, inventaris, dan membuat laporan komprehensif untuk bisnis pakaian Anda. Dibangun dengan React dan Tailwind CSS." />
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for consistent typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Link to the external stylesheet -->
+
+    <style>
+      .app-loading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: 'Inter', sans-serif;
+        background-color: #f8fafc;
+      }
+      .app-loading .spinner {
+        width: 48px;
+        height: 48px;
+        border: 5px solid #e2e8f0; /* slate-200 */
+        border-bottom-color: #4f46e5; /* indigo-600 */
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+        margin-bottom: 1rem;
+      }
+      .app-loading .loading-text {
+        font-size: 1.1rem;
+        color: #4b5563; /* gray-600 */
+        font-weight: 500;
+      }
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.417.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^11.3.19",
+    "chart.js": "https://aistudiocdn.com/chart.js@^4.5.0",
+    "chart.js/": "https://aistudiocdn.com/chart.js@^4.5.0/",
+    "jspdf": "https://aistudiocdn.com/jspdf@^2.5.1",
+    "jspdf-autotable": "https://aistudiocdn.com/jspdf-autotable@^3.8.2",
+    "express": "https://aistudiocdn.com/express@^5.1.0",
+    "url": "https://aistudiocdn.com/url@^0.11.4",
+    "path": "https://aistudiocdn.com/path@^0.12.7",
+    "cors": "https://aistudiocdn.com/cors@^2.8.5",
+    "fs": "https://aistudiocdn.com/fs@^0.0.1-security",
+    "buffer": "https://aistudiocdn.com/buffer@^6.0.3",
+    "crypto": "https://aistudiocdn.com/crypto@^1.0.1",
+    "socket.io-client": "https://aistudiocdn.com/socket.io-client@^4.7.5",
+    "socket.io": "https://aistudiocdn.com/socket.io@^4.8.1",
+    "http": "https://aistudiocdn.com/http@^0.0.1-security",
+    "node-fetch": "https://aistudiocdn.com/node-fetch@^3.3.2"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-ByATmqf-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-D8HD--7n.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+    <!-- This is the root element where the React application will be mounted. -->
+    <div id="root">
+        <div class="app-loading">
+            <div class="spinner"></div>
+            <div class="loading-text">Memuat Kazumi Dashboard...</div>
+        </div>
+    </div>
+    
+    <!-- The main entry point for the React application. -->
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
