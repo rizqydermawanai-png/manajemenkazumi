@@ -10,18 +10,24 @@ const port = 3001; // Port untuk server proxy, jangan sama dengan port aplikasi 
 app.use(cors());
 app.use(express.json());
 
-// Konfigurasi database MySQL InfinityFree
+// --- KONFIGURASI DATABASE ---
 const dbConfig = {
-    host: 'sql312.infinityfree.com',
-    user: 'if0_40280057',
-    password: 'ikibrokol1',
-    database: 'if0_40280057_kazumi_database',
-    port: 3306
+    host: process.env.DB_HOST || 'sql312.infinityfree.com',
+    user: process.env.DB_USER || 'if0_40280057',
+    password: process.env.DB_PASSWORD || 'ikibrokol1',
+    database: process.env.DB_NAME || 'if0_40280057_kazumi_database',
+    port: process.env.DB_PORT || 3306,
 };
 
-// Fungsi untuk membuat koneksi database
+// Fungsi untuk mendapatkan koneksi database
 async function getConnection() {
-    return await mysql.createConnection(dbConfig);
+    try {
+        const connection = await mysql.createConnection(dbConfig);
+        return connection;
+    } catch (error) {
+        console.error('Database connection error:', error);
+        throw error;
+    }
 }
 
 // --- KONFIGURASI PENTING ---
